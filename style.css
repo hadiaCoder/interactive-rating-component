@@ -1,0 +1,115 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --para-size: 15px;
+}
+.mycolor{
+    background-color: hsl(25, 97%, 53%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Overpass", serif;
+    background-color: var(--Very-Dark-Blue);
+}
+.rate-app{
+    width:20%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    padding:30px;
+    background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
+    border:1px solid var(--Dark-Blue);
+}
+@media(max-width:767px){
+    .rate-app{
+        width:50%;
+    }
+}
+
+.first-div svg{ 
+    border-radius: 50%;
+    background-color: rgb(77, 74, 74);
+    padding:10px;
+}
+.intro-text{
+    margin-top: 50px;
+}
+.intro-text h1{
+color:var(--White);
+}
+.intro-text p{
+color:var(--Light-Grey);
+margin-top: 50px;
+max-width: 300px;
+    line-height: 1.2;
+}
+.rate-vlaue-section .numbers {
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.rate-vlaue-section .numbers span{
+    text-decoration: none;
+    color:var(--Light-Grey);
+    background-color: var(--Dark-Blue);
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.rate-vlaue-section .numbers span:hover{
+    background-color: var(--White);
+}
+.submit{
+    background-color: var(--Orange);
+    width:100%;
+    padding:10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size:20px;
+    transform: 0.3s;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: var(--White);
+    color:var(--Very-Dark-Blue);
+}
+.second-div{
+    margin-top: 50px;
+    text-align: center;
+}
+.firstp{
+    color:var(--Orange);
+    background-color: var(--Dark-Blue);
+    width: fit-content;
+    margin:20px auto;
+    border-radius: 20px;
+    padding:5px 20px 5px 20px;
+}
+.second-div h2{
+    color:var(--White);
+    font-weight: 600;
+}
+.secondp{
+    color: var(--Light-Grey);
+}
+.hidden{
+    display: none;
+}
+.checked{
+    background-color: var(--Orange) !important;
+    color:var(--White) !important;
+}
